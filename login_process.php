@@ -2,7 +2,7 @@
 // When the submit button is pressed
 if (isset($_POST['submit'])) {
 
-	$name = array("Tushar", "Luitel", "Class", "Internship", "Job", "Please", "Give", "Me");
+	$name = array("Tushar", "Luitel", "Hello", "Gamer", "Django");
 	$minimum = 5;
 	$maximum = 10;
 	// Entered username and password stored in a variable

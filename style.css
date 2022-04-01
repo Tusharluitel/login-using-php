@@ -6,7 +6,7 @@ body{
 	overflow: hidden;
 
 }
-/* For overall login area */
+
 .login{
 	position: absolute;
 	top: 50%;
@@ -16,18 +16,18 @@ body{
 	background: white;
 	border-radius: 15px;
 }
-/* For the heading */
+
 .login h1{
 	text-align: center;
 	padding: 0 0 20px 0;
 	border-bottom: 5px solid #146A3F ;
 }
-/* For the area below heading */
+
 .login-body form{
 	padding:0 40px;
 	box-sizing: border-box;
 }
-/* For the specific field like username and password */
+
 form .login-field{
 	position: relative; 
 	border-bottom: 2px solid #ced4d3;
@@ -50,13 +50,13 @@ form .login-field{
 	left: 5px;
 	color: #ced4d3;
 	transform: translateY(-50%);
-	/* Changes the coordinate position upwards */
+	
 	font-size: 16px;
 	pointer-events:none;
 	transition: 0.5s;
-	/* label moves up with a transition */
+	
 }
-/* Inserts something before the content of each selected element(s). */
+
 .login-field span::before{
 	content: "";
 	position: absolute;

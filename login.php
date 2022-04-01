@@ -13,7 +13,7 @@
 
 	<div class="login">
 		<h1>Login</h1>
-		<!-- Creation of form -->
+
 		<div class="login-body">
 
 			<form action="login_process.php" method="POST">
