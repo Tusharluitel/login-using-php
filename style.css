@@ -6,7 +6,7 @@ body{
 	overflow: hidden;
 
 }
-
+/* For overall login area */
 .login{
 	position: absolute;
 	top: 50%;
@@ -16,24 +16,74 @@ body{
 	background: white;
 	border-radius: 15px;
 }
-
+/* For the heading */
 .login h1{
 	text-align: center;
 	padding: 0 0 20px 0;
 	border-bottom: 5px solid #146A3F ;
 }
-
+/* For the area below heading */
 .login-body form{
 	padding:0 40px;
 	box-sizing: border-box;
 }
-
-form .login-setup{
+/* For the specific field like username and password */
+form .login-field{
 	position: relative; 
-	border-bottom: 2px solid #146A3F;
+	border-bottom: 2px solid #ced4d3;
 	margin: 30px 0;
 }
-
-.login-setup input{
+/* For layout of the input box */
+.login-field input{
 	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
+}
+/* For layout for the values */
+.login-field label{
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #ced4d3;
+	transform: translateY(-50%);
+	/* Changes the coordinate position upwards */
+	font-size: 16px;
+	pointer-events:none;
+	transition: 0.5s;
+	/* label moves up with a transition */
+}
+/* Inserts something before the content of each selected element(s). */
+.login-field span::before{
+	content: "";
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 0px;
+	height: 2px;
+	background: #146A3F;
+	transition: .5s;
+}
+/* When tapping the input box */
+.login-field input:focus ~ label,
+.login-field input:valid ~ label{
+	top: -5px;
+	color: #4087C4 ;
+}
+.login-field input:focus ~ span::before,
+.login-field input:valid ~ span::before{
+	width: 100%;
+}
+
+.password{
+	margin: -5px 0 20px 5px;
+	color: #ced4d3;
+	cursor: pointer;
+}
+
+.password:hover{
+	color: #4087C4;
 }

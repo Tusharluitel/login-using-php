@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Login Page</title>
+	<title>Login</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,11 +18,13 @@
 
 			<form action="login_process.php" method="POST">
 				<div class="login-field">
-					<input type="text" class="login-setup" name="username" placeholder="Enter Username" required>
+					<input type="text" class="login-setup" name="username" required>
+					<span></span>
 					<label>Username</label>
 				</div>
 				<div class="login-field">
-					<input type="password" class="login-setup" name="password" placeholder="Enter Password" required>
+					<input type="password" class="login-setup" name="password" required>
+					<span></span>
 					<label>Password</label>
 				</div>
 				<div class="password">Forgot password?</div>
