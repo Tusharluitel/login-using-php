@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #4087C4;
+	font-family: sans-serif;
+	overflow: hidden;
+
+}
+
+.login{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	width: 400px;
+	background: white;
+	border-radius: 15px;
+}
+
+.login h1{
+	text-align: center;
+	padding: 0 0 20px 0;
+	border-bottom: 5px solid #146A3F ;
+}
+
+.login-body form{
+	padding:0 40px;
+	box-sizing: border-box;
+}
+
+form .login-setup{
+	position: relative; 
+	border-bottom: 2px solid #146A3F;
+	margin: 30px 0;
+}
+
+.login-setup input{
+	width: 100%;
+}
