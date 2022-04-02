@@ -1,21 +1,31 @@
-body{
-	display: grid;
-	height: 100%;
-	background-color: #4087C4;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	font-family: sans-serif;
-	place-items: center;
 
+}
+
+body{
+	
+	background-color: #4087C4;
+	place-items: center;
+	overflow: hidden;
 }
 
 .login{
-	width: 400px;
+	width: 100%;
 	background: white;
+	max-width: 450px;
+	padding: 0 20px;
+	margin: 170px auto;
 	border-radius: 15px;
 }
 
-.login h1{
+.login .title{
+	line-height: 70px;
 	text-align: center;
-	padding: 0 0 20px 0;
+	padding: 0 0 5px 0;
 	border-bottom: 5px solid #146A3F ;
 
 }
@@ -83,6 +93,7 @@ form .login-field{
 
 .password:hover{
 	color: #4087C4;
+	text-decoration: underline;
 }
 input[type='submit']{
 	width: 100%;
@@ -97,12 +108,14 @@ input[type='submit']{
 input[type='submit']:hover{
 	border-color: #4087C4;
 	transition: .5s;
+
 }
 
 .signup{
 	text-align: center;
 	margin: 30px 0px;
 	font-size: 16px;
+	padding-bottom: 15px;
 }
 
 .signup a{
