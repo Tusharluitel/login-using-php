@@ -44,18 +44,12 @@ form .login-field{
 .eye{
 	position: absolute;
 	padding-top: 10px;
+	cursor: pointer;
 }
 #hide1{
 	display: none;
 }
-form .error {
-	background: #f2dede;
-	color: #a94442;
-	padding: 10px;
-	margin: 20px auto;
-	width: 95%;
-	border-radius: 5px;
-}
+
 
 .login-field input{
 	width: 100%;
@@ -169,6 +163,28 @@ input[type='submit']:hover{
 }
 
 .logout:hover{
+	text-decoration: underline;
+	color: #146A3F;
+}
+.incorrect{
+	margin-top: 20%;
+	position:static;
+	text-align: center;
+	color: #ffa500;
+}
+.try-again{
+	float:right;
+	background: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 10px;
+	color: #4087C4;
+}
+.try-again:hover{
 	text-decoration: underline;
 	color: #146A3F;
 }

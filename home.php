@@ -17,9 +17,9 @@ if (isset($_SESSION['user_name']) && isset($_SESSION['password'])) {
 	</head>
 
 	<body class="display">
-		<h1 class="information-display">Hello, <?php echo $_SESSION['name']; ?></h1><br>
+		<h1 class="information-display">Hello, <?php echo $_SESSION['user_name']; ?></h1><br>
 		<h3 class="information-display">Your password is <?php echo $_SESSION['password']; ?> </h3>
-		<a href="index.php" class="logout">Logout</a>
+		<a href="index.html" class="logout">Logout</a>
 
 	</body>
 
