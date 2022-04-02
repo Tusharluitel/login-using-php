@@ -2,7 +2,7 @@
 session_start();
 // When the submit button is pressed
 if (isset($_POST['username']) && isset($_POST['password'])) {
-	$userList = array("tusharluitel", "deerwalk");
+	$userList = array("tusharluitel");
 	$userPassword = array("1234567");
 
 	$username = $_POST['username'];
