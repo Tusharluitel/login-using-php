@@ -15,6 +15,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 	} else {
 
 		header("Location: incorrect.php?error=Incorrect username or password");
+		$_SESSION['user_name'] = $username;
+		$_SESSION['password'] = $password;
 		exit();
 	}
 } else {
