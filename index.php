@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<div class="login">
+		<h1 class="title">Login</h1>
+
+		<div class="login-body">
+
+			<form action="login.php" method="POST">
+				<?php if (isset($_GET['error'])) { ?>
+					<p class="error"><?php echo $_GET['error'] ?> </p>
+				<?php } ?>
+				<div class="login-field">
+					<input type="text" class="login-setup" name="username">
+					<span></span>
+					<label>Username</label>
+				</div>
+				<div class="login-field">
+					<input type="password" class="login-setup" name="password" id="myInput">
+					<span class="eye" onclick="myFunction()">
+						<i id="hide1" class="fa fa-eye"></i>
+						<i id="hide2" class="fa fa-eye-slash"></i>
+					</span>
+					<span></span>
+					<label>Password</label>
+				</div>
+				<div class="password">Forgot password?</div>
+				<!-- 'name =' is used to send data to the super global POST  -->
+				<input type="submit" value="Login" name="submit" class="login-submit">
+				<div class="signup">
+					Not a member? <a href="#">Sign up</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- For showing password -->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myInput");
+			var y = document.getElementById("hide1");
+			var z = document.getElementById("hide2");
+
+			if (x.type === "password") {
+				x.type = "text";
+				y.style.display = "block";
+				z.style.display = "none";
+			} else {
+				x.type = "password";
+				y.style.display = "none";
+				z.style.display = "block";
+			}
+		}
+	</script>
+</body>
+
+</html>

@@ -7,10 +7,11 @@
 }
 
 body{
-	
+	display: flex;
 	background-color: #4087C4;
 	place-items: center;
 	overflow: hidden;
+	flex-direction: column;
 }
 
 .login{
@@ -39,6 +40,21 @@ form .login-field{
 	position: relative; 
 	border-bottom: 2px solid #ced4d3;
 	margin: 30px 0;
+}
+.eye{
+	position: absolute;
+	padding-top: 10px;
+}
+#hide1{
+	display: none;
+}
+form .error {
+	background: #f2dede;
+	color: #a94442;
+	padding: 10px;
+	margin: 20px auto;
+	width: 95%;
+	border-radius: 5px;
 }
 
 .login-field input{
@@ -75,6 +91,7 @@ form .login-field{
 	transition: .5s;
 }
 /* When tapping the input box */
+
 .login-field input:focus ~ label,
 .login-field input:valid ~ label{
 	top: -5px;
@@ -126,4 +143,32 @@ input[type='submit']:hover{
 .signup a:hover{
 	color: #4087C4;
 	text-decoration: underline;
+}
+
+.display{
+	margin-top: 20%;
+	position:static;
+}
+.information-display{
+	text-align: center;
+	color: #ffa500;
+
+}
+
+.logout{
+	float:right;
+	background: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 10px;
+	color: #4087C4;
+}
+
+.logout:hover{
+	text-decoration: underline;
+	color: #146A3F;
 }
